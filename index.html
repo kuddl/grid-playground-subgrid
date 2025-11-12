@@ -4,35 +4,86 @@
     <title>Home</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
+
     <link rel="stylesheet" href="grid.css" />
-    <link rel="stylesheet" href="stack.css" />
-    <script type="module" src="script.js"></script>
   </head>
   <body>
-    <main>
-      <h1>This is a "Stacked GRID image"</h1>
-      <div class="stack">
-        <div class="container image">
-          <img src="https://picsum.photos/seed/1761839553273/400/150" alt="" />
+    <main class="app">
+      <section class="grid-container">
+        <div class="card">
+          <div> spalte 123123321231323211</div>
+          <div> spalte 2</div>
         </div>
-        <div class="container content">
-          <div class="row">
-            <div class="col-3">
-              This content will take up 3/12 (or 1/4) of the container
-            </div>
-            <div class="col-3">
-              This content will take up 3/12 (or 1/4) of the container
-            </div>
-            <div class="col-6">
-              This content will take up 6/12 (or 1/2) of the container
-            </div>
-          </div>
+        <div class="card">
+          <div> spalte 1</div>
+          <div> spalte 2</div>
         </div>
-      </div>
+        <div class="card">
+          <div> spalte 1</div>
+          <div> spalte 2</div>
+        </div>
+        <div class="card">
+          <div> spalte 1</div>
+          <div> spalte 2</div>
+        </div>
+        <div class="card">
+          <div> spalte 1</div>
+          <div> spalte 2</div>
+        </div>
+        <div class="card">
+          <div> spalte 1</div>
+          <div> spalte 2</div>
+        </div>
+        <div class="card">
+          <div> spalte 1</div>
+          <div> spalte 2</div>
+        </div>
+        <div class="card">
+          <div> spalte 1</div>
+          <div> spalte 2</div>
+        </div>
+        <div class="card">
+          <div> spalte 1</div>
+          <div> spalte 2</div>
+        </div>
+        <div class="card">
+          <div> spalte 1</div>
+          <div> spalte 2</div>
+        </div>
+        <div class="card">
+          <div> spalte 1</div>
+          <div> spalte 2</div>
+        </div>
+        <div class="card">
+          <div> spalte 1</div>
+          <div> spalte 2</div>
+        </div>
+        <div class="card">
+          <div> spalte 1</div>
+          <div> spalte 2</div>
+        </div>
+        <div class="card">
+          <div> spalte 1</div>
+          <div> spalte 2</div>
+        </div>
+        <div class="card">
+          <div> spalte 1</div>
+          <div> spalte 2</div>
+        </div>
+        <div class="card">
+          <div> spalte 1</div>
+          <div> spalte 2</div>
+        </div>
+      </section>
     </main>
+    <button onclick="flippy()">flippy</button>
+    <script>
+      const flippy = function () {
+        const appElement = document.querySelector('.app');
+        appElement.classList.toggle('flipped');
+      };
+    </script>
+
+    <script type="module" src="script.js"></script>
   </body>
 </html>
