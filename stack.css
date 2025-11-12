@@ -1,0 +1,29 @@
+.container {
+  outline: 2px dotted orange;
+}
+
+.image img {
+  --leak: 50px;
+  display: block;
+  width: calc(100% + var(--leak));
+  height: auto;
+  object-fit: cover; /* optional — controls cropping/fitting */
+  margin-inline: calc(var(--leak) * -0.5);
+  border-radius: 15px;
+}
+
+.content {
+  background-color: rgba(51, 51, 51, 0.4);
+  color: white;
+}
+
+.stack {
+  display: grid;
+  place-items: end;
+  grid-template-areas: 'stack';
+}
+
+.image,
+.content {
+  grid-area: stack;
+}
